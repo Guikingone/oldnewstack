@@ -6,20 +6,16 @@ I will :
 
 - Use only official images
 
-- Focus on lightweight (ie if alpine is available, default choice)
+- Select alpine when available
 
-- Deliver an effective PHP / Symfony ready to use developpement stack
+- Deliver a PHP/Symfony ready stack for dev
 
 
-From those hypothesis good candidates are :
+Good candidates are now :
 
+* Busybox
 * Nginx
 * Php-fpm
-* PostgresSql
-
-
-To keep aligned with docker's philosophy, the source code (app) will be contained in a busybox
-Database will of course be persistent
-Our dev website will be mounted from an existing local path
+* PostgresSql (maybe Sqlite)
 
 Main parameters will be specified in Environment variables
