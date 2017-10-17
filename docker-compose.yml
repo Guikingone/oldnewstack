@@ -1,0 +1,39 @@
+version: "3.1"
+
+services:
+    # Server configuration
+    nginx:
+        container_name: nginx_debian
+        build: ./nginx_debian
+        ports:
+            - '8000:80'
+        links:
+            - php-fpm
+        volumes:
+            - '/home/ygranger/www:/var/www:rw'
+            - './nginx_debian/logs/nginx:/var/log/nginx'
+            - './nginx_debian/conf.d:/etc/nginx/conf.d:ro'
+    # DB configuration
+    mariadb:
+        container_name: mariadb_last
+        image: mariadb
+        environment:
+            MYSQL_USERNAME: root
+            MYSQL_ROOT_PASSWORD: root
+        ports:
+            - '3306:3306'
+    php-fpm:
+        container_name: php-fpm
+        image: php:7-fpm
+        ports:
+            - '9000:9000'
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin
+        external_links:
+            - mariadb:db
+        environment:
+            MYSQL_USERNAME: root
+            MYSQL_ROOT_PASSWORD: root
+            PMA_HOST: mariadb
+        ports:
+            - 9090:80

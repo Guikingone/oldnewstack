@@ -1,0 +1,16 @@
+2017/10/17 03:40:22 [emerg] 1#1: getpwnam("nginx") failed in /etc/nginx/nginx.conf:1
+2017/10/17 03:42:19 [emerg] 1#1: getpwnam("nginx") failed in /etc/nginx/nginx.conf:1
+2017/10/17 03:43:42 [emerg] 1#1: directive "location" has no opening "{" in /etc/nginx/conf.d/project.conf:25
+2017/10/17 03:52:23 [emerg] 1#1: directive "location" has no opening "{" in /etc/nginx/conf.d/project.conf:25
+2017/10/17 03:53:58 [emerg] 1#1: "fastcgi_pass" directive is not allowed here in /etc/nginx/conf.d/project.conf:29
+2017/10/17 03:56:30 [emerg] 1#1: invalid number of arguments in "fastcgi_pass" directive in /etc/nginx/conf.d/project.conf:27
+2017/10/17 03:58:10 [emerg] 1#1: host not found in upstream "php_fpm" in /etc/nginx/conf.d/project.conf:26
+2017/10/17 03:58:59 [emerg] 1#1: host not found in upstream "php-fpm" in /etc/nginx/conf.d/project.conf:26
+2017/10/17 04:02:47 [emerg] 1#1: host not found in upstream "php-fpm" in /etc/nginx/conf.d/project.conf:26
+2017/10/17 04:06:20 [emerg] 1#1: host not found in upstream "php-fpm" in /etc/nginx/conf.d/project.conf:25
+2017/10/17 04:10:34 [emerg] 1#1: invalid number of arguments in "fastcgi_index" directive in /etc/nginx/conf.d/project.conf:28
+2017/10/17 04:11:08 [emerg] 1#1: host not found in upstream "php-fpm" in /etc/nginx/conf.d/project.conf:25
+2017/10/17 04:12:08 [emerg] 1#1: host not found in upstream "php-fpm" in /etc/nginx/conf.d/project.conf:25
+2017/10/17 04:12:35 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/project.conf:25
+2017/10/17 04:13:50 [emerg] 1#1: host not found in upstream "php-fpm" in /etc/nginx/conf.d/project.conf:25
+2017/10/17 04:14:41 [emerg] 1#1: host not found in upstream "php-fpm" in /etc/nginx/conf.d/project.conf:25
