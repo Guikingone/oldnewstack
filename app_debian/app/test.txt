@@ -1,2 +1,0 @@
-Ceci est un test de modification live avec la directive ADD
-Voici une modification externe au container
