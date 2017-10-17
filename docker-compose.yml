@@ -25,6 +25,8 @@ services:
     php-fpm:
         container_name: php-fpm
         image: php:7-fpm
+        volumes:
+            - '/home/ygranger/www:/var/www:rw'
         ports:
             - '9000:9000'
     phpmyadmin:
